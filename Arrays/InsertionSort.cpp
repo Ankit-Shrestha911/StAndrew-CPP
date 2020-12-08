@@ -2,21 +2,22 @@
 using namespace std;
 // Insertion Sort //
 
-void insertionSort(int *arr, int size){
+void insertionSort(int *arr, int size)
+{
 
-  int min,j;
+    int min, j;
     for (int i = 1; i < size; i++)
     {
         min = arr[i];
         j = i;
 
-        while(j>=0 and arr[j-1]>min){
-            arr[j] = arr[j-1];
+        while (j >= 0 and arr[j - 1] > min)
+        {
+            arr[j] = arr[j - 1];
             j--;
         }
         arr[j] = min;
     }
-    
 }
 int main()
 {
