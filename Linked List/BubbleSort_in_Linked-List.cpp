@@ -110,10 +110,11 @@ void bubbleSort(node* &head){
  int main()  
 {
     node* head = NULL;
-    insertAtTail(head,1);
-    insertAtTail(head,5);
-    insertAtTail(head,2);
-    insertAtTail(head,3);
+   int data;
+   for(int i=0; i<5; i++){
+       cin>>data;
+       insertAtTail(head,data);
+   }
     display(head);
     cout<<endl;
     bubbleSort(head);
