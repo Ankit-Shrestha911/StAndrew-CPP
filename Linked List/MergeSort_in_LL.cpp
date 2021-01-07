@@ -61,7 +61,7 @@ node *mid(node *head)
 
 node *mergeSort(node *head)
 {
-    // base case //
+    // base case //  be carefull in base case // hahahahaa
     if (head == NULL || head->next == NULL)
     {
         return head;
