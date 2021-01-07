@@ -36,7 +36,6 @@ void sortHelper(node*&temp,node*&tempd, node*&head){
 node* sortList(node*&head){
     node*z=NULL,*zd=NULL,*o=NULL,*od=NULL,*t=NULL,*td=NULL;
 
-while(head){
     if(head->data == 0){
        sortHelper(z,zd,head);
     }
@@ -46,7 +45,6 @@ while(head){
     else{
             sortHelper(t,td,head);
     }
-}
 
     if(zd!=NULL){
         zd->next = o;
