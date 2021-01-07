@@ -14,7 +14,7 @@ public:
     }
 };
 
-void iterativeBubbleSort(node *head, int size)
+void iterativeReverse(node *head, int size)
 {
 
     node *curr, *nxt;
@@ -25,10 +25,9 @@ void iterativeBubbleSort(node *head, int size)
         for (int j = 1; j <= i; j++)
         {
             nxt = curr->next;
-            if(curr->data > nxt->data){
+
             swap(curr->data, nxt->data);
-            }
-            
+
             curr = nxt;
         }
     }
@@ -73,7 +72,7 @@ int main()
         insertAtEnd(head, data);
     }
 
-   iterativeBubbleSort(head,size);
+    iterativeReverse(head, size);
     display(head);
 
     return 0;
