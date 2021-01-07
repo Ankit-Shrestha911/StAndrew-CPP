@@ -71,16 +71,16 @@ void display(node *head)
 int main()
 {
     node *list = NULL, *list1 = NULL;
-    int size, size1;
+    int size1, size2;
     cin >> size >> size1;
 
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < size1; i++)
     {
         int data;
         cin >> data;
         insertAtEnd(list, data);
     }
-    for (int i = 0; i < size1; i++)
+    for (int i = 0; i < size2; i++)
     {
         int data;
         cin >> data;
