@@ -72,7 +72,7 @@ int main()
 {
     node *list = NULL, *list1 = NULL;
     int size1, size2;
-    cin >> size >> size1;
+    cin >> size1 >> size1;
 
     for (int i = 0; i < size1; i++)
     {
