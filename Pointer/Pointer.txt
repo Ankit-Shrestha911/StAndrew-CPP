@@ -1,0 +1,38 @@
+		(Single) Pointer
+
+1. We use pointer to store the address of a variable.
+2. Initialize the pointer like this following:
+        int x = 4; (simple varialbe)
+	int *pointerOfX; (pointer variable)
+ 	pointerOfX = &x; (pointing the address of x variable)
+
+3. Print the value from pointer like this:
+	cout<<*pointerOfX; 
+      (how to read this symbol (*)  for pointer)
+	is
+      Value at (pointer variable name (x) is 4)
+
+4. How to change the x value using pointer following:
+       we have x = 4; (we want to make it 5) using pointer we create above
+       *pointerOfX = 5;
+       if we cout the x it is change to 5;
+	cout<<x; (answer: 5)
+
+5. If we want to print pointer own address that contain another variable address following:
+	cout<<"Address is "<<&pointerOfX;
+
+		(Double) Pointer
+
+1. Initialization
+	int **pointer;
+	
+    for example:
+	int x = 4;
+	int *singlePointer = &x;
+	int **doublePointer = &singlePointer;
+
+	cout<<*doublePointer;(it print the address of x (which means *doublePointer = &x ))
+	cout<<**dobulePointer;(it print the value of x (which means **doublePointer = x ))
+
+
+		
